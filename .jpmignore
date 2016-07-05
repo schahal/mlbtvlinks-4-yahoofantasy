@@ -1,0 +1,12 @@
+# Ignore build and test files
+Makefile
+Dockerfile
+build
+test
+
+# Ignore packaged files
+*.zip
+*.xpi
+
+# ignore special hidden files (e.g., .git/)
+.*

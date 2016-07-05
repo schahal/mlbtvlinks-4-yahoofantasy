@@ -5,7 +5,7 @@ Why
 ==============
 Too often I'm looking at my fantasy baseball team on Yahoo! only to see that a few of my players are playing. Instead of opening up a new tab, navigating to mlb.tv, finding the game and launching the live stream (yes, you need an MLB.TV premium account to watch), it'd save precious seconds if the links were already on the fantasy roster page.
 
-This simple Firefox add-on provides the link on page: https://addons.mozilla.org/en-US/firefox/addon/mlb-tv-4-yahoo-fantasy-bball/
+This simple Firefox add-on provides the link on page: http://addons.mozilla.org/en-US/firefox/addon/mlb-tv-4-yahoo-fantasy-bball/
 
 Good improvements are to be had, e.g., find game id and map to the mlb.tv game (using something like https://gd2.mlb.com/components/game/mlb/year_2016) but this suffices for me so far as all links to games are avavailable.
 

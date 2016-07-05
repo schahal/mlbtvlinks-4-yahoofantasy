@@ -7,26 +7,10 @@ var day =  date.getDate().toString()[1]?date.getDate().toString():"0"+date.getDa
 
 var today = [year, month, day].join('-');
 
-var jsonurl = "https://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/grid_int.json";
+/* jsonurl can be used in future to map games and gen a finer mlbhref
+ * e.g., var jsonurl = "https://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/grid_int.json";
+ */
 var mlbhref = "http://m.mlb.com/tv/" + today;
-
-//var jq = document.createElement('script');
-//jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
-//document.getElementsByTagName('head')[0].appendChild(jq);
-// ... give time for script to load, then type.
-//jQuery.noConflict();
-//alert("jquery injected");
-
-$.ajax({
-    url: jsonurl,
-    dataType: 'jsonp',
-    success: function(data){// your code here
-        alert(data);
-    }
-});
-//get_json(jsonurl, function(json) {
-//    console.log(json);
-//});
 
 /*
  * In future, can have a map here that associates team to their
@@ -35,8 +19,6 @@ $.ajax({
  *
  * For now, redirecting to all of today's games suffices
  */
-
-
 for(var i = 0; i < links.length; i++) {
 
     if (links[i].href.search(/sports.yahoo.com\/mlb\/[a-z0-9-]+\/$/) > 0) {
@@ -80,16 +62,3 @@ for(var i = 0; i < links.length; i++) {
     }
 }
 
-function get_json(url, fn) {
-    http.get(url, function(res) {
-        var body = '';
-        res.on('data', function(chunk) {
-            body += chunk;
-        });
-
-        res.on('end', function() {
-            var response = JSON.parse(body);
-            fn(response);
-        });
-    });
-};
