@@ -9,7 +9,7 @@
 MYID=`/bin/date +'%Y%m%d-%H%M%S'`
 docker build -t ${MYID} .
 JOB=`docker run -d ${MYID}`
-docker cp ${JOB}:/usr/src/app/@mlbtvlinks-4-yahoofantasy-0.0.1.xpi ./
+docker cp ${JOB}:/usr/src/app/@mlbtvlinks-4-yahoofantasy-0.0.2.xpi ./
 docker kill ${JOB} 
 docker stop ${JOB} 
 docker rm ${JOB}
