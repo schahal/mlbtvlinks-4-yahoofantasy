@@ -1,7 +1,7 @@
 {
   "title": "Add MLB.TV Game Links to Yahoo! Fantasy Baseball Page",
   "name": "mlbtvlinks-4-yahoofantasy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provides a link to MLB.TV live stream of baseball games when viewing roster on Yahoo! Fantasy Baseball. The link will show up on in-progress games when viewing fantasy rosters. A subscription to MLB.TV is required to stream the game.",
   "main": "index.js",
   "author": "Satbir Chahal",

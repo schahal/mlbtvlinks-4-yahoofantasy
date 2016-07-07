@@ -7,7 +7,7 @@ Too often I'm looking at my fantasy baseball team on Yahoo! only to see that a f
 
 This simple Firefox add-on provides the link on page: http://addons.mozilla.org/en-US/firefox/addon/mlb-tv-4-yahoo-fantasy-bball/
 
-Good improvements are to be had, e.g., find game id and map to the mlb.tv game (using something like https://gd2.mlb.com/components/game/mlb/year_2016) but this suffices for me so far as all links to games are avavailable.
+Good improvements are to be had, e.g., using something like http://gd2.mlb.com/components/game/mlb/year_2016, but this suffices for me so far as all links to "today's" games are there - can improve by using mlb gd2 data to provide specific links to previous days as well
 
 
 Build
@@ -35,7 +35,3 @@ Likewise, to debug with docker:
 
     make withdocker-debug
 
-Release Notes
-==============
-
-0.0.1 : Initial commit... still need to change build script dynamically copy xpi to host from docker containerrather than manually changing name 

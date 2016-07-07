@@ -13,7 +13,7 @@ var data = require("sdk/self").data;
  * roster pages. May need tweaking if Y! changes layout
  */
 pageMod.PageMod({
-  include: "*.yahoo.com",
+  include: "*.fantasysports.yahoo.com",
 
   contentScriptFile: [data.url("js/jquery-2.1.4.min.js"), data.url("gen_links.js")]
 });
